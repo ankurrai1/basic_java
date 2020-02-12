@@ -1,2 +1,3 @@
 # ***Basic Java***
-it is getting started repo with java
+> ***It is getting started rapo to of learning Java.
+here are some exampele code and files***
