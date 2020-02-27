@@ -1,6 +1,7 @@
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
+
 public class Crypto {
 
     public Scanner input = new Scanner(System.in);
@@ -82,4 +83,5 @@ public class Crypto {
         mess = crypto.groupify(mess,3);
         System.out.println(mess);
     }
+    
 }
