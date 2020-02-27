@@ -9,6 +9,7 @@ public class OddsAndEvens {
     private String userChoice = "";
     private String result = "";
 
+    
     private void getInfo(){
         System.out.println("Lets play game called as odds or even");
         System.out.print("What is your name ? ");
@@ -16,11 +17,13 @@ public class OddsAndEvens {
         System.out.println("hii "+this.name);
     }
 
+    
     private void getOption(){
         System.out.println("Enter your option as \n1.  odd \n2. even");
         this.userChoice = this.input.next();
     }
 
+    
     private void verifyAnswer(){
         this.getOption();
         if (this.userChoice.equals("odd")){
@@ -35,6 +38,7 @@ public class OddsAndEvens {
         }
     }
 
+    
     private void startGame(){
         Random random = new Random();
         System.out.print("How many fingers you want to put :  ");
@@ -53,6 +57,7 @@ public class OddsAndEvens {
         }
     }
 
+    
     private void showWinner(){
         if(this.userChoice.equals(this.result)){
             System.out.println( "Congratulations winner is  : " + this.name);
@@ -61,6 +66,7 @@ public class OddsAndEvens {
             System.out.println(" Sorry computer won the game ....");
         }
     }
+    
 
     public static void main(String[] args){
         OddsAndEvens oddsAndEven = new OddsAndEvens();
@@ -69,4 +75,5 @@ public class OddsAndEvens {
         oddsAndEven.startGame();
         oddsAndEven.showWinner();
     }
+    
 }
