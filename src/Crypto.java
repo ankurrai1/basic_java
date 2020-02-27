@@ -75,6 +75,7 @@ public class Crypto {
     }
 
     public static void main(String args[]){
+        
         Crypto crypto = new Crypto();
         crypto.greetUser();
         String mess = crypto.getLine();
@@ -82,6 +83,7 @@ public class Crypto {
         mess = crypto.caesarify(mess ,3);
         mess = crypto.groupify(mess,3);
         System.out.println(mess);
+        
     }
     
 }
