@@ -6,6 +6,7 @@ class CryptoTest {
 
     @Test
     void normalizeText() {
+        
         Crypto crypto = new Crypto();
         assertEquals("ANKURKUMARRAI",crypto.normalizeText("anku r kumar ! \"rai\" "));
         assertEquals("",crypto.normalizeText("\"\" "));
@@ -16,6 +17,7 @@ class CryptoTest {
     }
     @Test
     void shiftAlphabet() {
+        
         Crypto crypto = new Crypto();
         assertEquals("CDEFGHIJKLMNOPQRSTUVWXYZAB",crypto.shiftAlphabet(2));
         assertEquals("GHIJKLMNOPQRSTUVWXYZABCDEF",crypto.shiftAlphabet(6));
@@ -26,6 +28,7 @@ class CryptoTest {
 
     @Test
     void caesarify() {
+        
         Crypto crypto = new Crypto();
         assertEquals("BOLVSLVNBSSBJ",crypto.caesarify("ANKURKUMARRAI",1));
         assertEquals("ANKURKUMARRAI",crypto.caesarify("ANKURKUMARRAI",0));
@@ -36,6 +39,7 @@ class CryptoTest {
 
     @Test
     void groupify() {
+        
         Crypto crypto = new Crypto();
         assertEquals("ANK URK UMA RRA Ixx ",crypto.groupify("ANKURKUMARRAI",3));
         assertEquals("ANK URK ",crypto.groupify("ANKURK",3));
